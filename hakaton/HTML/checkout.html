@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="az">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Ödəniş
+  </title>
+  <link href="../global css/reset.css" rel="stylesheet"/>
+  <link href="../global css/config.css" rel="stylesheet"/>
+  <link href="../global css/global.css" rel="stylesheet"/>
+  <link href="../STYLE/checkout.css" rel="stylesheet"/>
+  <link href="../STYLE/responsive.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- burda nav sənin əvvəlki kimi -->
+  <main class="checkout-page">
+   <h1 class="checkout-title">
+    Ödəniş Məlumatları
+   </h1>
+   <section class="checkout-layout">
+    <!-- Sol: kart preview -->
+    <div class="card-preview">
+     <h2>
+      Kart Görünüşü
+     </h2>
+     <div class="credit-card">
+      <div class="chip">
+      </div>
+      <div class="card-number">
+       •••• •••• •••• ••••
+      </div>
+      <div class="card-footer">
+       <span class="card-holder">
+        AD SOYAD
+       </span>
+       <span class="card-expiry">
+        MM/YY
+       </span>
+      </div>
+     </div>
+     <!-- Sifariş xülasəsi -->
+     <div class="order-summary">
+      <h3>
+       Sifariş Xülasəsi
+      </h3>
+      <div class="order-tour-title">
+       Tur adı
+      </div>
+      <div class="order-tour-location">
+       Məkan
+      </div>
+      <div class="order-tour-meta">
+       <span class="order-tour-date">
+        Tarix
+       </span>
+       <span class="order-tour-days">
+        Müddət
+       </span>
+       <span class="order-tour-group">
+        Qrup
+       </span>
+      </div>
+      <div class="order-prices">
+       <div class="row">
+        <span>
+         Bilet Qiyməti
+        </span>
+        <span class="order-price">
+         0 ₼
+        </span>
+       </div>
+       <div class="row total">
+        <span>
+         Toplam
+        </span>
+        <span class="order-total">
+         0 ₼
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Sağ: kart məlumatları formu -->
+    <div class="card-form">
+     <h2>
+      Kart Məlumatları
+     </h2>
+     <form>
+      <label>
+       Kart Nömrəsi
+       <input placeholder="1234 5678 9012 3456" type="text"/>
+      </label>
+      <label>
+       Kart Sahibinin Adı
+       <input placeholder="AD SOYAD" type="text"/>
+      </label>
+      <div class="row-2">
+       <label>
+        Son istifadə tarixi
+        <input placeholder="MM/YY" type="text"/>
+       </label>
+       <label>
+        CVV
+        <input placeholder="123" type="password"/>
+       </label>
+      </div>
+      <button class="pay-btn" type="submit">
+       Ödənişi Tamamla
+      </button>
+     </form>
+    </div>
+   </section>
+  </main>
+  <script src="../SCRIPT/checkout.js">
+  </script>
+  <script src="../SCRIPT/lang.js">
+  </script>
+ </body>
+</html>

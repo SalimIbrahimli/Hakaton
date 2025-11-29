@@ -1,0 +1,30 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url("../../fonts/Roboto/static/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: RubikRegular;
+  src: url("../../fonts/Rubik/static/Rubik-Regular.ttf");
+}
+
+/* FONTS */
+
+:root {
+  --roboto-regular: "RobotoRegular", sans-serif;
+  --rubik-regular: "RubikRegular", sans-serif;
+}
+
+/* COLORS */
+:root {
+  /* COLORS */
+  --mainbg: #0a3263;
+  --mainGreen: #f0fbf3;
+  --mainWhite: #ffffff;
+  --text-color-light: #7d818d;
+  --graycolor: #f4f7fa;
+  --dark-blue-color: #161c2d;
+  --footertextcolor: #afb0b6;
+  --nav-hover-color: #fb6d45;
+  --blue-color: #473bf0;
+}

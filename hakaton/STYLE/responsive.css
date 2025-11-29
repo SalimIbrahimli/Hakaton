@@ -1,0 +1,167 @@
+/* ===================================== */
+/*   GLOBAL RESPONSIVE STYLES            */
+/*   (bütün səhifələr üçün)              */
+/* ===================================== */
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  nav {
+    padding: 16px 40px;
+  }
+
+  .footer-content {
+    gap: 28px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  nav {
+    padding: 12px 24px;
+  }
+
+  .nav-links {
+    gap: 16px;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hero,
+  .routes-main,
+  .about-main,
+  .contact-main,
+  .discount-main,
+  .faq-main,
+  .profile-main,
+  .map-main,
+  .welcome-main,
+  .checkout-layout {
+    padding-inline: 24px;
+  }
+
+  .features-grid,
+  .popular-grid,
+  .tips-grid,
+  .pricing-grid,
+  .routes-grid,
+  .places-grid,
+  .achievements-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-content {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 16px;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    font-size: 12px;
+    gap: 12px;
+  }
+
+  section,
+  main,
+  .routes-main,
+  .about-main,
+  .contact-main,
+  .discount-main,
+  .faq-main,
+  .profile-main,
+  .map-main,
+  .welcome-main,
+  .checkout-layout {
+    padding-inline: 16px;
+  }
+
+  .hero-title,
+  .routes-title,
+  .welcome-title {
+    font-size: 28px;
+  }
+
+  .features-grid,
+  .popular-grid,
+  .tips-grid,
+  .pricing-grid,
+  .routes-grid,
+  .places-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-title,
+  .routes-title,
+  .welcome-title {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .hero-buttons,
+  .routes-actions,
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding-inline: 16px;
+  }
+}
+
+/* Lang switcher buttons */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-btn {
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.7);
+  color: #e5e7eb;
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(59, 130, 246, 0.9);
+  border-color: rgba(59, 130, 246, 1);
+}
+
+.lang-btn.active {
+  background: #2563eb;
+  color: #f9fafb;
+  border-color: #3b82f6;
+}

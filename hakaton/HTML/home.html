@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="az">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   AZ Land - Daxili Turizm Platforması
+  </title>
+  <!-- Iconlar -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <!-- Global faylların -->
+  <link href="../global css/reset.css" rel="stylesheet"/>
+  <link href="../global css/config.css" rel="stylesheet"/>
+  <link href="../global css/global.css" rel="stylesheet"/>
+  <!-- Bu səhifənin CSS-i -->
+  <link href="../STYLE/home.css" rel="stylesheet"/>
+  <link href="../STYLE/responsive.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Navigation -->
+  <nav>
+   <div class="logo">
+    <i class="fas fa-plane-departure">
+    </i>
+    <span>
+     AZ Land
+    </span>
+   </div>
+   <ul class="nav-links">
+    <li>
+     <a class="active" data-i18n="nav_home" href="./home.html">
+      Ana Səhifə
+     </a>
+    </li>
+    <li>
+     <a data-i18n="nav_map" href="./map.html">
+      Xəritə
+     </a>
+    </li>
+    <li>
+     <a data-i18n="nav_faq" href="./faq.html">
+      FAQ
+     </a>
+    </li>
+    <li>
+     <a data-i18n="nav_about" href="./about-us.html">
+      Haqqımızda
+     </a>
+    </li>
+    <li>
+     <a data-i18n="nav_contact" href="./contact.html">
+      Əlaqə
+     </a>
+    </li>
+    <li>
+     <a data-i18n="nav_prices" href="./price.html">
+      Qiymətlər
+     </a>
+    </li>
+    <li>
+     <a class="btn-login" data-i18n="nav_login" href="./login.html">
+      Giriş
+     </a>
+    </li>
+    <li class="lang-switcher">
+     <button class="lang-btn" data-lang="az">
+      AZ
+     </button>
+     <button class="lang-btn" data-lang="en">
+      EN
+     </button>
+     <button class="lang-btn" data-lang="ru">
+      RU
+     </button>
+    </li>
+   </ul>
+  </nav>
+  <div class="fullscreen-video" id="introVideoWrapper">
+   <video autoplay="" id="introVideo" muted="" playsinline="" src="../intro.mp4">
+   </video>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+   <div class="hero-content">
+    <div class="hero-left">
+     <div class="badge">
+      <i class="fas fa-rocket">
+      </i>
+      <span>
+       🏔️ Daxili Turizm Platforması
+      </span>
+     </div>
+     <h1 class="hero-title">
+      Dağları Kəşf Et
+     </h1>
+     <p class="hero-description">
+      AZ Land ilə Azərbaycanın dağları, kəndləri və milli parklarını
+            professional bələdçilərlə kəşf edin. İnteraktiv xəritələr, ağıllı
+            marşrutlar və real vaxt məlumatlar bir yerdə.
+     </p>
+     <div class="hero-buttons">
+      <button class="btn-primary">
+       Səyahətə Başla
+       <i class="fas fa-arrow-right">
+       </i>
+      </button>
+     </div>
+    </div>
+    <div class="hero-right">
+     <div class="hero-image-container">
+      <img alt="Dağ mənzərəsi" class="float-wave" src="../03d90339-99a7-4d64-bcb9-47c522b16eda (1).jpg"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Üst Feature kartları -->
+  <section class="features-section">
+   <div class="container">
+    <div class="features-grid">
+     <div class="feature-card">
+      <div class="icon-wrapper">
+       <svg class="icon" viewbox="0 0 24 24">
+        <path d="M3 3v18h18">
+        </path>
+        <path d="M18 17V9">
+        </path>
+        <path d="M13 17V5">
+        </path>
+        <path d="M8 17v-3">
+        </path>
+       </svg>
+      </div>
+      <h3 class="feature-title">
+       Dağ Yürüşləri
+      </h3>
+      <p class="feature-description">
+       50+ marşrut, bütün çətinlik səviyyələrində.
+      </p>
+     </div>
+     <div class="feature-card">
+      <div class="icon-wrapper">
+       <svg class="icon" viewbox="0 0 24 24">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z">
+        </path>
+        <circle cx="12" cy="10" r="3">
+        </circle>
+       </svg>
+      </div>
+      <h3 class="feature-title">
+       Qrup Yürüşləri
+      </h3>
+      <p class="feature-description">
+       Professional bələdçilərlə təhlükəsiz gəzintilər.
+      </p>
+     </div>
+     <div class="feature-card">
+      <div class="icon-wrapper">
+       <svg class="icon" viewbox="0 0 24 24">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+        </path>
+        <circle cx="12" cy="13" r="4">
+        </circle>
+       </svg>
+      </div>
+      <h3 class="feature-title">
+       Sertifikatlar
+      </h3>
+      <p class="feature-description">
+       Hər yürüş üçün rəqəmsal nailiyyət və sertifikatlar.
+      </p>
+     </div>
+     <div class="feature-card">
+      <div class="icon-wrapper">
+       <svg class="icon" viewbox="0 0 24 24">
+        <circle cx="12" cy="12" r="10">
+        </circle>
+        <path d="M12 6v6l4 2">
+        </path>
+       </svg>
+      </div>
+      <h3 class="feature-title">
+       Marşrut Xəritəsi
+      </h3>
+      <p class="feature-description">
+       İnteraktiv 3D dağ xəritəsi və canlı statistika.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Populyar Bölgələr -->
+  <section class="popular-section">
+   <div class="popular-inner">
+    <div class="popular-label">
+     <i class="fa-solid fa-chart-line">
+     </i>
+     <span>
+      Populyar Bölgələr
+     </span>
+    </div>
+    <div class="popular-grid">
+     <!-- Card 1 -->
+     <article class="route-card card-1">
+      <div class="card-header">
+       <div class="icon-badge">
+        <svg class="mountain-icon" viewbox="0 0 24 24">
+         <path d="M3 20h18L12 4 3 20z">
+         </path>
+        </svg>
+       </div>
+       <div class="difficulty-tag">
+        Çətin
+       </div>
+      </div>
+      <h3 class="route-title">
+       Bazardüzü (4466m)
+      </h3>
+      <p class="route-info">
+       3 gün • 180 AZN
+      </p>
+      <div class="popularity-section">
+       <div class="popularity-header">
+        <span class="popularity-label">
+         Populyarlıq
+        </span>
+        <span class="popularity-value">
+         95%
+        </span>
+       </div>
+       <div class="progress-bar">
+        <div class="progress-fill" style="width: 95%">
+        </div>
+       </div>
+      </div>
+     </article>
+     <!-- Card 2 -->
+     <article class="route-card card-2">
+      <div class="card-header">
+       <div class="icon-badge">
+        <svg class="mountain-icon" viewbox="0 0 24 24">
+         <path d="M3 20h18L12 4 3 20z">
+         </path>
+        </svg>
+       </div>
+       <div class="difficulty-tag">
+        Orta
+       </div>
+      </div>
+      <h3 class="route-title">
+       Şahdağ Zirvəsi
+      </h3>
+      <p class="route-info">
+       2 gün • 120 AZN
+      </p>
+      <div class="popularity-section">
+       <div class="popularity-header">
+        <span class="popularity-label">
+         Populyarlıq
+        </span>
+        <span class="popularity-value">
+         88%
+        </span>
+       </div>
+       <div class="progress-bar">
+        <div class="progress-fill" style="width: 88%">
+        </div>
+       </div>
+      </div>
+     </article>
+     <!-- Card 3 -->
+     <article class="route-card card-3">
+      <div class="card-header">
+       <div class="icon-badge">
+        <svg class="mountain-icon" viewbox="0 0 24 24">
+         <path d="M3 20h18L12 4 3 20z">
+         </path>
+        </svg>
+       </div>
+       <div class="difficulty-tag">
+        Asan-Orta
+       </div>
+      </div>
+      <h3 class="route-title">
+       Xınalıq Marşrutu
+      </h3>
+      <p class="route-info">
+       1 gün • 65 AZN
+      </p>
+      <div class="popularity-section">
+       <div class="popularity-header">
+        <span class="popularity-label">
+         Populyarlıq
+        </span>
+        <span class="popularity-value">
+         92%
+        </span>
+       </div>
+       <div class="progress-bar">
+        <div class="progress-fill" style="width: 92%">
+        </div>
+       </div>
+      </div>
+     </article>
+     <!-- Card 4 -->
+     <article class="route-card card-4">
+      <div class="card-header">
+       <div class="icon-badge">
+        <svg class="mountain-icon" viewbox="0 0 24 24">
+         <path d="M3 20h18L12 4 3 20z">
+         </path>
+        </svg>
+       </div>
+       <div class="difficulty-tag">
+        Asan
+       </div>
+      </div>
+      <h3 class="route-title">
+       Qızılqaya Dağı
+      </h3>
+      <p class="route-info">
+       1 gün • 45 AZN
+      </p>
+      <div class="popularity-section">
+       <div class="popularity-header">
+        <span class="popularity-label">
+         Populyarlıq
+        </span>
+        <span class="popularity-value">
+         78%
+        </span>
+       </div>
+       <div class="progress-bar">
+        <div class="progress-fill" style="width: 78%">
+        </div>
+       </div>
+      </div>
+     </article>
+     <!-- Card 5 -->
+     <article class="route-card card-5">
+      <div class="card-header">
+       <div class="icon-badge">
+        <svg class="tree-icon" viewbox="0 0 24 24">
+         <path d="M12 2L8 8h8l-4-6z">
+         </path>
+         <path d="M10 7L7 12h10l-3-5z">
+         </path>
+         <path d="M8 11L6 15h12l-2-4z">
+         </path>
+         <line x1="12" x2="12" y1="15" y2="22">
+         </line>
+        </svg>
+       </div>
+       <div class="difficulty-tag">
+        Orta
+       </div>
+      </div>
+      <h3 class="route-title">
+       Tufandağ Yürüşü
+      </h3>
+      <p class="route-info">
+       2 gün • 95 AZN
+      </p>
+      <div class="popularity-section">
+       <div class="popularity-header">
+        <span class="popularity-label">
+         Populyarlıq
+        </span>
+        <span class="popularity-value">
+         85%
+        </span>
+       </div>
+       <div class="progress-bar">
+        <div class="progress-fill" style="width: 85%">
+        </div>
+       </div>
+      </div>
+     </article>
+     |
+     <!-- Card 6 -->
+     <article class="route-card card-6">
+      <div class="card-header">
+       <div class="icon-badge">
+        <svg class="tree-icon" viewbox="0 0 24 24">
+         <path d="M12 2L8 8h8l-4-6z">
+         </path>
+         <path d="M10 7L7 12h10l-3-5z">
+         </path>
+         <path d="M8 11L6 15h12l-2-4z">
+         </path>
+         <line x1="12" x2="12" y1="15" y2="22">
+         </line>
+        </svg>
+       </div>
+       <div class="difficulty-tag">
+        Asan
+       </div>
+      </div>
+      <h3 class="route-title">
+       Hirkan Cığırları
+      </h3>
+      <p class="route-info">
+       1 gün • 50 AZN
+      </p>
+      <div class="popularity-section">
+       <div class="popularity-header">
+        <span class="popularity-label">
+         Populyarlıq
+        </span>
+        <span class="popularity-value">
+         80%
+        </span>
+       </div>
+       <div class="progress-bar">
+        <div class="progress-fill" style="width: 80%">
+        </div>
+       </div>
+      </div>
+     </article>
+    </div>
+   </div>
+  </section>
+  <div class="travel-tips">
+   <div class="section-header">
+    <h1 class="section-title">
+     Səyahət Məsləhətləri
+    </h1>
+   </div>
+   <div class="tips-grid">
+    <!-- Tip Card 1 -->
+    <div class="tip-card card-1">
+     <div class="tip-icon-wrapper">
+      <svg class="tip-icon" viewbox="0 0 24 24">
+       <path d="M3 20h18L12 4 3 20z">
+       </path>
+      </svg>
+     </div>
+     <h3 class="tip-title">
+      Yürüşə necə hazırlaşmalı?
+     </h3>
+     <p class="tip-description">
+      Avadanlıq, geyim və təhlükəsizlik qaydaları
+     </p>
+    </div>
+    <!-- Tip Card 2 -->
+    <div class="tip-card card-2">
+     <div class="tip-icon-wrapper">
+      <svg class="tip-icon" viewbox="0 0 24 24">
+       <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+       </path>
+       <circle cx="12" cy="13" r="4">
+       </circle>
+      </svg>
+     </div>
+     <h3 class="tip-title">
+      Azərbaycanın 3 böyük dağ sistemi
+     </h3>
+     <p class="tip-description">
+      Böyük Qafqaz, Kiçik Qafqaz, Talış dağları
+     </p>
+    </div>
+    <!-- Tip Card 3 -->
+    <div class="tip-card card-3">
+     <div class="tip-icon-wrapper">
+      <svg class="tip-icon" viewbox="0 0 24 24">
+       <path d="M12 2L2 7l10 5 10-5-10-5z">
+       </path>
+       <path d="M2 17l10 5 10-5">
+       </path>
+       <path d="M2 12l10 5 10-5">
+       </path>
+      </svg>
+     </div>
+     <h3 class="tip-title">
+      İlk yürüşünüz üçün məsləhətlər
+     </h3>
+     <p class="tip-description">
+      Yeni başlayanlar üçün asan marşrutlar
+     </p>
+    </div>
+   </div>
+  </div>
+  <!-- CTA Section -->
+  <section class="cta-section">
+   <h2 class="cta-title">
+    Macəranıza indi başlayın
+   </h2>
+   <p class="cta-description">
+    Oyunlar oynayın, bal toplayın və xüsusi endirimlər qazanın.
+   </p>
+   <button class="btn-primary">
+    Oyunlara Keçid
+   </button>
+  </section>
+  <!-- PREMIUM banner -->
+  <div class="promo-banner" id="promoBanner">
+   <a href="./discount-page.html">
+    <div class="promo-icon">
+     ⭐
+    </div>
+    <div class="promo-text">
+     <h3>
+      Premium AI
+     </h3>
+     <p>
+      40%-ə qədər endirim 🎁
+     </p>
+    </div>
+   </a>
+  </div>
+  <!-- Footer -->
+  <footer>
+   <div class="footer-content">
+    <div class="footer-brand">
+     <div class="logo">
+      <i class="fas fa-plane-departure">
+      </i>
+      <span>
+       AZ Land
+      </span>
+     </div>
+     <p class="footer-description">
+      Dünyanı kəşf etməyin ən yaxşı yolu – ağıllı turizm platforması.
+     </p>
+    </div>
+    <div class="footer-column">
+     <h4>
+      Sürətli Keçidlər
+     </h4>
+     <ul class="footer-links">
+      <li>
+       <a href="./home.html">
+        Ana Səhifə
+       </a>
+      </li>
+      <li>
+       <a href="./map.html">
+        Xəritə
+       </a>
+      </li>
+      <li>
+       <a href="./faq.html">
+        FAQ
+       </a>
+      </li>
+      <li>
+       <a href="./games.html">
+        Oyunlar
+       </a>
+      </li>
+      <li>
+       <a href="./about-us.html">
+        Haqqımızda
+       </a>
+      </li>
+      <li>
+       <a href="./contact.html">
+        Əlaqə
+       </a>
+      </li>
+      <li>
+       <a href="./price.html">
+        Qiymətlər
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-column">
+     <h4>
+      Əlaqə
+     </h4>
+     <ul class="footer-contact">
+      <li>
+       <i class="fas fa-map-marker-alt">
+       </i>
+       Bakı, Azərbaycan
+      </li>
+      <li>
+       <i class="fas fa-envelope">
+       </i>
+       info@travelx.az
+      </li>
+      <li>
+       <i class="fas fa-phone">
+       </i>
+       +994 12 345 67 89
+      </li>
+     </ul>
+    </div>
+    <div class="footer-column">
+     <h4>
+      Bizi İzləyin
+     </h4>
+     <div class="social-links">
+      <a class="social-link" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a class="social-link" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a class="social-link" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a class="social-link" href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!-- Compass Directions -->
+  <div class="compass-directions">
+   <div class="direction-btn">
+    N
+   </div>
+   <div class="direction-btn">
+    S
+   </div>
+   <div class="direction-btn">
+    W
+   </div>
+  </div>
+  <!-- Compass Button -->
+  <div class="compass-button">
+   <i class="fas fa-compass">
+   </i>
+  </div>
+  <!-- Skriptlər -->
+  <script src="../SCRIPT/ai-chat.js">
+  </script>
+  <script src="../SCRIPT/home.js">
+  </script>
+  <script src="../SCRIPT/auth.js">
+  </script>
+  <script src="../SCRIPT/lang.js">
+  </script>
+  <script>
+   const introVideo = document.getElementById("introVideo");
+const introWrapper = document.getElementById("introVideoWrapper");
+if (introVideo && introWrapper) {
+  introVideo.addEventListener("ended", () => {
+    introWrapper.classList.add("hide-intro");
+    setTimeout(() => {
+      introWrapper.remove();
+    }, 800);
+  });
+}
+  </script>
+ </body>
+</html>

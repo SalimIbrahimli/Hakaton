@@ -1,0 +1,146 @@
+/* CSS Reset */
+
+/* Remove default margin and padding from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Set a base font and remove default styling */
+html,
+body {
+  height: 100%;
+  line-height: 1.6;
+  color: #333;    
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove quotes from blockquotes and q elements */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* Reset table styling */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove default button styling */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Remove default input styling */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Remove default link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+/* Reset emphasis elements */
+b,
+strong {
+  font-weight: normal;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+/* Reset image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Reset form elements */
+fieldset {
+  border: none;
+}
+
+legend {
+  display: block;
+}
+
+/* Reset HR styling */
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+}
+
+/* Reset address styling */
+address {
+  font-style: normal;
+}
+
+/* Reset caption styling */
+caption {
+  text-align: left;
+}
+
+/* Reset del and ins styling */
+del {
+  text-decoration: none;
+}
+
+ins {
+  text-decoration: none;
+}

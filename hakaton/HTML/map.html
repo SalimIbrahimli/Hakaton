@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="az">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   İnteraktiv Dünya Xəritəsi
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="../global css/global.css" rel="stylesheet"/>
+  <link href="../global css/config.css" rel="stylesheet"/>
+  <link href="../global css/reset.css" rel="stylesheet"/>
+  <link href="../STYLE/map.css" rel="stylesheet"/>
+  <link href="../STYLE/responsive.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Navigation -->
+  <nav>
+   <div class="logo">
+    <i class="fas fa-plane-departure">
+    </i>
+    <span>
+     AZ Land
+    </span>
+   </div>
+   <ul class="nav-links">
+    <li>
+     <a data-i18n="nav_home" href="./home.html">
+      Ana Səhifə
+     </a>
+    </li>
+    <li>
+     <a class="active" data-i18n="nav_map" href="./map.html">
+      Xəritə
+     </a>
+    </li>
+    <li>
+     <a data-i18n="nav_faq" href="./faq.html">
+      FAQ
+     </a>
+    </li>
+    <li>
+     <a data-i18n="nav_about" href="./about-us.html">
+      Haqqımızda
+     </a>
+    </li>
+    <li>
+     <a data-i18n="nav_contact" href="./contact.html">
+      Əlaqə
+     </a>
+    </li>
+    <li>
+     <a data-i18n="nav_prices" href="./price.html">
+      Qiymətlər
+     </a>
+    </li>
+    <li>
+     <a class="btn-login" data-i18n="nav_login" href="./login.html">
+      Giriş
+     </a>
+    </li>
+    <li class="lang-switcher">
+     <button class="lang-btn" data-lang="az">
+      AZ
+     </button>
+     <button class="lang-btn" data-lang="en">
+      EN
+     </button>
+     <button class="lang-btn" data-lang="ru">
+      RU
+     </button>
+    </li>
+   </ul>
+  </nav>
+  <!-- PREMIUM -->
+  <div class="promo-banner" id="promoBanner">
+   <a href="./discount-page.html">
+    <div class="promo-icon">
+     ⭐
+    </div>
+    <div class="promo-text">
+     <h3>
+      Premium AI
+     </h3>
+     <p>
+      40%-ə qədər endirim 🎁
+     </p>
+    </div>
+   </a>
+  </div>
+  <!-- MAIN -->
+  <main class="map-main">
+   <!-- HERO TEXT -->
+   <section class="map-hero">
+    <div class="map-hero-badge">
+     <i class="fa-solid fa-mountain-sun">
+     </i>
+     <span>
+      Azərbaycan yürüş xəritəsi
+     </span>
+    </div>
+    <h1 class="map-title">
+     Dağ Sistemləri və Şəhərlər
+    </h1>
+    <p class="map-subtitle">
+     Böyük Qafqaz, Kiçik Qafqaz və Talış dağlarında əsas şəhər və
+          yürüş məntəqələri.
+    </p>
+   </section>
+   <!-- MAP AREA -->
+   <section class="map-section">
+    <div class="map-container">
+     <!-- Əgər istəsən bu div-ə Azərbaycan xəritəsinin PNG/SVG fonunu verə bilərsən -->
+     <!-- background-image üçün map.css-də komment var -->
+     <!-- Böyük Qafqaz (Blue) -->
+     <button class="map-pin pin-big" data-label="Quba • Böyük Qafqaz" style="--x:72%; --y:18%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-mountain">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Quba • Böyük Qafqaz
+      </span>
+     </button>
+     <button class="map-pin pin-big" data-label="Qusar • Şahdağ" style="--x:80%; --y:15%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-mountain">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Qusar • Şahdağ
+      </span>
+     </button>
+     <button class="map-pin pin-big" data-label="Şəki" style="--x:64%; --y:23%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-city">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Şəki • Böyük Qafqaz
+      </span>
+     </button>
+     <button class="map-pin pin-big" data-label="Qəbələ" style="--x:69%; --y:26%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-city">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Qəbələ • Yürüş zonası
+      </span>
+     </button>
+     <!-- Kiçik Qafqaz (Pink) -->
+     <button class="map-pin pin-small" data-label="Gəncə" style="--x:46%; --y:40%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-city">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Gəncə • Kiçik Qafqaz
+      </span>
+     </button>
+     <button class="map-pin pin-small" data-label="Naftalan" style="--x:40%; --y:46%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-mountain">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Naftalan
+      </span>
+     </button>
+     <button class="map-pin pin-small" data-label="Daşkəsən" style="--x:52%; --y:44%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-mountain">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Daşkəsən • yürüş marşrutları
+      </span>
+     </button>
+     <!-- Talış Dağları (Green / Cyan) -->
+     <button class="map-pin pin-talish" data-label="Lənkəran" style="--x:72%; --y:68%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-city">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Lənkəran • Talış Dağları
+      </span>
+     </button>
+     <button class="map-pin pin-talish" data-label="Lerik" style="--x:68%; --y:73%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-mountain">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Lerik • uzunömürlülər diyarı
+      </span>
+     </button>
+     <button class="map-pin pin-talish" data-label="Astara" style="--x:63%; --y:69%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-city">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Astara • Xəzər sahili
+      </span>
+     </button>
+     <!-- Bakı (mərkəz – xüsusi pin) -->
+     <button class="map-pin pin-baku" data-label="Bakı" style="--x:62%; --y:36%">
+      <span class="map-pin-inner">
+       <i class="fa-solid fa-location-dot">
+       </i>
+      </span>
+      <span class="map-pin-tooltip">
+       Bakı • start nöqtəsi
+      </span>
+     </button>
+     <!-- LEGEND -->
+     <div class="map-legend">
+      <div class="legend-header">
+       <i class="fa-solid fa-mountain">
+       </i>
+       <span>
+        Dağ Sistemləri
+       </span>
+      </div>
+      <ul class="legend-list">
+       <li>
+        <span class="legend-dot legend-big">
+        </span>
+        <span>
+         Böyük Qafqaz
+        </span>
+       </li>
+       <li>
+        <span class="legend-dot legend-small">
+        </span>
+        <span>
+         Kiçik Qafqaz
+        </span>
+       </li>
+       <li>
+        <span class="legend-dot legend-talish">
+        </span>
+        <span>
+         Talış Dağları
+        </span>
+       </li>
+       <li>
+        <span class="legend-dot legend-baku">
+        </span>
+        <span>
+         Bakı (start nöqtəsi)
+        </span>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+   <div class="footer-content">
+    <div class="footer-brand">
+     <div class="logo">
+      <i class="fas fa-plane-departure">
+      </i>
+      <span>
+       AZ Land
+      </span>
+     </div>
+     <p class="footer-description">
+      Dünyanı kəşf etməyin ən yaxşı yolu
+     </p>
+    </div>
+    <div class="footer-column">
+     <h4>
+      Sürətli Keçidlər
+     </h4>
+     <ul class="footer-links">
+      <li>
+       <a href="./home.html">
+        Ana Səhifə
+       </a>
+      </li>
+      <li>
+       <a href="./map.html">
+        Xəritə
+       </a>
+      </li>
+      <li>
+       <a href="./faq.html">
+        FAQ
+       </a>
+      </li>
+      <li>
+       <a href="./about-us.html">
+        Haqqımızda
+       </a>
+      </li>
+      <li>
+       <a href="./contact.html">
+        Əlaqə
+       </a>
+      </li>
+      <li>
+       <a href="./price.html">
+        Qiymətlər
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-column">
+     <h4>
+      Əlaqə
+     </h4>
+     <ul class="footer-contact">
+      <li>
+       <i class="fas fa-map-marker-alt">
+       </i>
+       Bakı, Azərbaycan
+      </li>
+      <li>
+       <i class="fas fa-envelope">
+       </i>
+       info@travelx.az
+      </li>
+      <li>
+       <i class="fas fa-phone">
+       </i>
+       +994 12 345 67 89
+      </li>
+     </ul>
+    </div>
+    <div class="footer-column">
+     <h4>
+      Bizi İzləyin
+     </h4>
+     <div class="social-links">
+      <a class="social-link" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a class="social-link" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a class="social-link" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a class="social-link" href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="../SCRIPT/map.js">
+  </script>
+  <script src="../SCRIPT/ai-chat.js">
+  </script>
+  <script src="../SCRIPT/auth.js">
+  </script>
+  <script src="../SCRIPT/lang.js">
+  </script>
+ </body>
+</html>
