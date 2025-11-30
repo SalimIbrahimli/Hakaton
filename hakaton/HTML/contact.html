@@ -1,329 +1,266 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Document
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="../global css/global.css" rel="stylesheet"/>
-  <link href="../global css/config.css" rel="stylesheet"/>
-  <link href="../global css/reset.css" rel="stylesheet"/>
-  <link href="../STYLE/contact.css" rel="stylesheet"/>
-  <link href="../STYLE/responsive.css" rel="stylesheet"/>
- </head>
- <body>
-  <nav>
-   <div class="logo">
-    <i class="fas fa-plane-departure">
-    </i>
-    <span>
-     AZ Land
-    </span>
-   </div>
-   <ul class="nav-links">
-    <li>
-     <a data-i18n="nav_home" href="./index.html">
-      Ana SÉ™hifÉ™
-     </a>
-    </li>
-    <li>
-     <a data-i18n="nav_map" href="./map.html">
-      XÉ™ritÉ™
-     </a>
-    </li>
-    <li>
-     <a data-i18n="nav_faq" href="./faq.html">
-      FAQ
-     </a>
-    </li>
-    <li>
-     <a href="./games.html">
-      Oyunlar
-     </a>
-    </li>
-    <li>
-     <a data-i18n="nav_about" href="./about-us.html">
-      HaqqÄ±mÄ±zda
-     </a>
-    </li>
-    <li>
-     <a class="active" data-i18n="nav_contact" href="./contact.html">
-      ÆlaqÉ™
-     </a>
-    </li>
-    <li>
-     <a data-i18n="nav_prices" href="./price.html">
-      QiymÉ™tlÉ™r
-     </a>
-    </li>
-    <li>
-     <a class="btn-login" data-i18n="nav_login" href="./login.html" id="nav-auth-btn">
-      GiriÅŸ
-     </a>
-    </li>
-    <li class="lang-switcher">
-     <button class="lang-btn" data-lang="az">
-      AZ
-     </button>
-     <button class="lang-btn" data-lang="en">
-      EN
-     </button>
-     <button class="lang-btn" data-lang="ru">
-      RU
-     </button>
-    </li>
-   </ul>
-  </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="../global css/global.css" rel="stylesheet" />
+    <link href="../global css/config.css" rel="stylesheet" />
+    <link href="../global css/reset.css" rel="stylesheet" />
+    <link href="../STYLE/contact.css" rel="stylesheet" />
+    <link href="../STYLE/responsive.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="fas fa-plane-departure"> </i>
+        <span> AZ Land </span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a data-i18n="nav_home" href="./index.html"> Ana SÉ™hifÉ™ </a>
+        </li>
+        <li>
+          <a data-i18n="nav_map" href="./map.html"> XÉ™ritÉ™ </a>
+        </li>
+        <li>
+          <a data-i18n="nav_faq" href="./faq.html"> FAQ </a>
+        </li>
+        <li>
+          <a href="./games.html"> Oyunlar </a>
+        </li>
+        <li>
+          <a data-i18n="nav_about" href="./about-us.html"> HaqqÄ±mÄ±zda </a>
+        </li>
+        <li>
+          <a class="active" data-i18n="nav_contact" href="./contact.html">
+            ÆlaqÉ™
+          </a>
+        </li>
+        <li>
+          <a data-i18n="nav_prices" href="./price.html"> QiymÉ™tlÉ™r </a>
+        </li>
+        <li>
+          <a
+            class="btn-login"
+            data-i18n="nav_login"
+            href="./login.html"
+            id="nav-auth-btn"
+          >
+            GiriÅŸ
+          </a>
+        </li>
+        <li class="lang-switcher">
+          <button class="lang-btn" data-lang="az">AZ</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </li>
+      </ul>
+    </nav>
 
-  <div class="contact-header">
-   <div class="mail-icon-small">
-    <svg viewbox="0 0 24 24">
-     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-     </path>
-     <polyline points="22,6 12,13 2,6">
-     </polyline>
-    </svg>
-   </div>
-   <h1>
-    Bizimle ÆlaqÉ™
-   </h1>
-   <p class="subtitle">
-    SualÄ±nÄ±z var? BizÉ™ yazÄ±n, É™n qÄ±sa zamanda cavab verÉ™cÉ™yik
-   </p>
-  </div>
-  <form class="contact-form" id="contactForm">
-   <div class="form-group">
-    <label for="name">
-     Ad
-     <span class="required">
-      *
-     </span>
-    </label>
-    <input id="name" placeholder="AdÄ±nÄ±zÄ± daxil edin" required="" type="text"/>
-   </div>
-   <div class="form-group">
-    <label for="email">
-     Email
-     <span class="required">
-      *
-     </span>
-    </label>
-    <input id="email" placeholder="Email Ã¼nvanÄ±nÄ±zÄ± daxil edin" required="" type="email"/>
-   </div>
-   <div class="form-group">
-    <label for="message">
-     Mesaj
-     <span class="required">
-      *
-     </span>
-    </label>
-    <textarea id="message" placeholder="MesajÄ±nÄ±z Ã¼Ã§Ã¼n..." required=""></textarea>
-   </div>
-   <label style="margin-bottom: 10px">
-    ðŸ“Ž ÅžÉ™kil ÆlavÉ™ Et (Ä°f Ä°stÉ™yi) ðŸ“·
-   </label>
-   <div class="file-upload" id="fileUpload">
-    <div class="file-upload-icon">
-     <svg viewbox="0 0 24 24">
-      <rect height="18" rx="2" ry="2" width="18" x="3" y="3">
-      </rect>
-      <circle cx="8.5" cy="8.5" r="1.5">
-      </circle>
-      <polyline points="21 15 16 10 5 21">
-      </polyline>
-     </svg>
+    <div class="contact-header">
+      <div class="mail-icon-small">
+        <svg viewbox="0 0 24 24">
+          <path
+            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+          ></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </div>
+      <h1>Bizimle ÆlaqÉ™</h1>
+      <p class="subtitle">
+        SualÄ±nÄ±z var? BizÉ™ yazÄ±n, É™n qÄ±sa zamanda cavab verÉ™cÉ™yik
+      </p>
     </div>
-    <div class="file-upload-text">
-     ÅžÉ™kil yÃ¼klÉ™yin vÉ™ ya bura sÃ¼rÃ¼n
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label for="name">
+          Ad
+          <span class="required"> * </span>
+        </label>
+        <input
+          id="name"
+          placeholder="AdÄ±nÄ±zÄ± daxil edin"
+          required=""
+          type="text"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">
+          Email
+          <span class="required"> * </span>
+        </label>
+        <input
+          id="email"
+          placeholder="Email Ã¼nvanÄ±nÄ±zÄ± daxil edin"
+          required=""
+          type="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="message">
+          Mesaj
+          <span class="required"> * </span>
+        </label>
+        <textarea
+          id="message"
+          placeholder="MesajÄ±nÄ±z Ã¼Ã§Ã¼n..."
+          required=""
+        ></textarea>
+      </div>
+      <label style="margin-bottom: 10px">
+        ðŸ“Ž ÅžÉ™kil ÆlavÉ™ Et (Ä°f Ä°stÉ™yi) ðŸ“·
+      </label>
+      <div class="file-upload" id="fileUpload">
+        <div class="file-upload-icon">
+          <svg viewbox="0 0 24 24">
+            <rect height="18" rx="2" ry="2" width="18" x="3" y="3"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+        </div>
+        <div class="file-upload-text">
+          ÅžÉ™kil yÃ¼klÉ™yin vÉ™ ya bura sÃ¼rÃ¼n
+        </div>
+        <div class="file-upload-subtext">PNG, JPG vÉ™ ya GIF</div>
+        <input accept="image/*" id="fileInput" type="file" />
+      </div>
+      <button class="submit-btn" type="submit">
+        <svg viewbox="0 0 24 24">
+          <line x1="22" x2="11" y1="2" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+        GÃ¶ndÉ™r
+      </button>
+    </form>
+    <div class="info-cards">
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewbox="0 0 24 24">
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            ></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+        <h3>Email</h3>
+        <p>info@travelx.az</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewbox="0 0 24 24">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+            ></path>
+          </svg>
+        </div>
+        <h3>Telefon</h3>
+        <p>+994 12 345 67 89</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">
+          <svg viewbox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </div>
+        <h3>Ãœnvan</h3>
+        <p>BakÄ±, AzÉ™rbaycan</p>
+      </div>
     </div>
-    <div class="file-upload-subtext">
-     PNG, JPG vÉ™ ya GIF
-    </div>
-    <input accept="image/*" id="fileInput" type="file"/>
-   </div>
-   <button class="submit-btn" type="submit">
-    <svg viewbox="0 0 24 24">
-     <line x1="22" x2="11" y1="2" y2="13">
-     </line>
-     <polygon points="22 2 15 22 11 13 2 9 22 2">
-     </polygon>
-    </svg>
-    GÃ¶ndÉ™r
-   </button>
-  </form>
-  <div class="info-cards">
-   <div class="info-card">
-    <div class="info-card-icon">
-     <svg viewbox="0 0 24 24">
-      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-      </path>
-      <polyline points="22,6 12,13 2,6">
-      </polyline>
-     </svg>
-    </div>
-    <h3>
-     Email
-    </h3>
-    <p>
-     info@travelx.az
-    </p>
-   </div>
-   <div class="info-card">
-    <div class="info-card-icon">
-     <svg viewbox="0 0 24 24">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-      </path>
-     </svg>
-    </div>
-    <h3>
-     Telefon
-    </h3>
-    <p>
-     +994 12 345 67 89
-    </p>
-   </div>
-   <div class="info-card">
-    <div class="info-card-icon">
-     <svg viewbox="0 0 24 24">
-      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z">
-      </path>
-      <circle cx="12" cy="10" r="3">
-      </circle>
-     </svg>
-    </div>
-    <h3>
-     Ãœnvan
-    </h3>
-    <p>
-     BakÄ±, AzÉ™rbaycan
-    </p>
-   </div>
-  </div>
-  <div class="promo-banner" id="promoBanner">
-   <a href="./discount-page.html">
-    <div class="promo-icon">
-     â­
-    </div>
-    <div class="promo-text">
-     <h3>
-      Premium AI
-     </h3>
-     <p>
-      40%-É™ qÉ™dÉ™r endirim ðŸŽ
-     </p>
-    </div>
-   </a>
-  </div>
-  
-  <footer>
-   <div class="footer-content">
-    <div class="footer-brand">
-     <div class="logo">
-      <i class="fas fa-plane-departure">
-      </i>
-      <span>
-       AZ Land
-      </span>
-     </div>
-     <p class="footer-description">
-      DÃ¼nyanÄ± kÉ™ÅŸf etmÉ™yin É™n yaxÅŸÄ± yolu
-     </p>
-    </div>
-    <div class="footer-column">
-     <h4>
-      SÃ¼rÉ™tli KeÃ§idlÉ™r
-     </h4>
-     <ul class="footer-links">
-      <li>
-       <a href="./index.html">
-        Ana SÉ™hifÉ™
-       </a>
-      </li>
-      <li>
-       <a href="./map.html">
-        XÉ™ritÉ™
-       </a>
-      </li>
-      <li>
-       <a href="./faq.html">
-        FAQ
-       </a>
-      </li>
-      <li>
-       <a href="./about-us.html">
-        HaqqÄ±mÄ±zda
-       </a>
-      </li>
-      <li>
-       <a href="./contact.html">
-        ÆlaqÉ™
-       </a>
-      </li>
-      <li>
-       <a href="./price.html">
-        QiymÉ™tlÉ™r
-       </a>
-      </li>
-     </ul>
-    </div>
-    <div class="footer-column">
-     <h4>
-      ÆlaqÉ™
-     </h4>
-     <ul class="footer-contact">
-      <li>
-       <i class="fas fa-map-marker-alt">
-       </i>
-       BakÄ±, AzÉ™rbaycan
-      </li>
-      <li>
-       <i class="fas fa-envelope">
-       </i>
-       info@travelx.az
-      </li>
-      <li>
-       <i class="fas fa-phone">
-       </i>
-       +994 12 345 67 89
-      </li>
-     </ul>
-    </div>
-    <div class="footer-column">
-     <h4>
-      Bizi Ä°zlÉ™yin
-     </h4>
-     <div class="social-links">
-      <a class="social-link" href="#">
-       <i class="fab fa-facebook-f">
-       </i>
+    <div class="promo-banner" id="promoBanner">
+      <a href="./discount-page.html">
+        <div class="promo-icon">â­</div>
+        <div class="promo-text">
+          <h3>Premium AI</h3>
+          <p>40%-É™ qÉ™dÉ™r endirim ðŸŽ</p>
+        </div>
       </a>
-      <a class="social-link" href="#">
-       <i class="fab fa-instagram">
-       </i>
-      </a>
-      <a class="social-link" href="#">
-       <i class="fab fa-twitter">
-       </i>
-      </a>
-      <a class="social-link" href="#">
-       <i class="fab fa-youtube">
-       </i>
-      </a>
-     </div>
     </div>
-   </div>
-  </footer>
-  <script src="../SCRIPT/ai-chat.js">
-  </script>
-  <script src="../SCRIPT/contact.js">
-  </script>
-  <script src="../SCRIPT/auth.js">
-  </script>
-  <script src="../SCRIPT/lang.js">
-  </script>
- </body>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <i class="fas fa-plane-departure"> </i>
+            <span> AZ Land </span>
+          </div>
+          <p class="footer-description">
+            DÃ¼nyanÄ± kÉ™ÅŸf etmÉ™yin É™n yaxÅŸÄ± yolu
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>SÃ¼rÉ™tli KeÃ§idlÉ™r</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="./index.html"> Ana SÉ™hifÉ™ </a>
+            </li>
+            <li>
+              <a href="./map.html"> XÉ™ritÉ™ </a>
+            </li>
+            <li>
+              <a href="./faq.html"> FAQ </a>
+            </li>
+            <li>
+              <a href="./about-us.html"> HaqqÄ±mÄ±zda </a>
+            </li>
+            <li>
+              <a href="./contact.html"> ÆlaqÉ™ </a>
+            </li>
+            <li>
+              <a href="./price.html"> QiymÉ™tlÉ™r </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>ÆlaqÉ™</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"> </i>
+              BakÄ±, AzÉ™rbaycan
+            </li>
+            <li>
+              <i class="fas fa-envelope"> </i>
+              info@travelx.az
+            </li>
+            <li>
+              <i class="fas fa-phone"> </i>
+              +994 12 345 67 89
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Bizi Ä°zlÉ™yin</h4>
+          <div class="social-links">
+            <a class="social-link" href="#">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+            <a class="social-link" href="#">
+              <i class="fab fa-instagram"> </i>
+            </a>
+            <a class="social-link" href="#">
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a class="social-link" href="#">
+              <i class="fab fa-youtube"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../SCRIPT/ai-chat.js"></script>
+    <script src="../SCRIPT/contact.js"></script>
+    <script src="../SCRIPT/auth.js"></script>
+    <script src="../SCRIPT/lang.js"></script>
+  </body>
 </html>
-
-
